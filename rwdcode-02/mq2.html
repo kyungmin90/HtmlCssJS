@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div.wrapper{
+        overflow: auto;
+    }
+    #leftsidebar{
+        float: none;
+        width: auto;
+    }
+    ul{
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        
+    }
+    #menu{
+        margin: 0px;
+    }
+    li{
+        background-color: lightgray;
+        border: 1px solid limegreen;
+        margin: 4px;
+        padding: 4px;
+        text-align: center;
+    }
+    a{
+        text-decoration: none;
+    }
+    li:hover{
+        background-color: gray;
+    }
+    #main{
+      margin-left: 10px;
+    }
+
+
+    /*데스트탑 스크린*/
+    @media only screen and (min-width: 600px){/*최소 600px*/
+        #leftsidebar{
+            float: left;
+            width: 200px;}
+        #main{
+            margin-left: 200px;
+            padding-left: 50px;}
+            
+    }
+    
+</style>
+<body>
+    <div class="wrapper">
+
+        <div id="leftsidebar">
+            <ul id="menu">
+                <a href="#"><li>main_menu_1</li></a>
+                <a href="#"><li>main_menu_2</li></a>
+                <a href="#"><li>main_menu_3</li></a>
+                <a href="#"><li>main_menu_4</li></a>
+            </ul>
+        </div>
+
+        <div id="main">
+            <h1>메인타이틀</h1>
+            <p>천문대 서브 페이지입니다</p>
+        </div>
+
+
+    </div>
+</body>
+</html>

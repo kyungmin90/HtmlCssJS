@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX ANIMATION 2</title>
+    <style>
+        @keyframes boxmove{
+            0%{left: 0px;}
+            50%{left: 500px;}
+            100%{left: 0px;}
+        }
+        
+        
+        
+        
+        body{
+            color: white;
+            background-color: #111111;
+        }
+      
+        div{
+            text-align: center;
+            border-radius: 20px;
+            width: 100px;
+            height: 50px;
+            margin: 5px;
+            background-color: lightsalmon;
+            position: relative;
+        }
+
+        #d1{
+            animation-name: boxmove;
+            animation-duration: 5s;
+            animation-timing-function: ease;/*기본값: 느리게-빠르게-느리게(관성)*/
+            animation-iteration-count: 5;
+        }
+        #d2{
+            animation-name: boxmove;
+            animation-duration: 5s;
+            animation-timing-function: linear; /*일정하게*/
+            animation-iteration-count: 5;
+        }
+        #d3{
+            animation-name: boxmove;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out; /*느리게시작 느리게멈춤*/
+            animation-iteration-count: 5;
+        }
+        #d4{
+            animation-name: boxmove;
+            animation-duration: 5s;
+            animation-timing-function: ease-in; /*느리게시작*/
+            animation-iteration-count: 5;
+        }
+        #d5{
+            animation-name: boxmove;
+            animation-duration: 5s;
+            animation-timing-function: ease-out; /*느리게멈춤*/
+            animation-iteration-count: 5;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <h2>애니메이션 시간함수 예</h2>
+    <div id="d1">ease</div>
+    <div id="d2">linear</div>
+    <div id="d3">ease-in-out</div>
+    <div id="d4">ease-in</div>
+    <div id="d5">ease-out</div>
+</body>
+</html>

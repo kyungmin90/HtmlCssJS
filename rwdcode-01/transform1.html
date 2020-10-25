@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        h2{
+            text-align: center;
+            width: 960px;
+            margin: 20px auto;
+        }
+        div.out{
+            width: 960px;
+            height: 250px;
+            margin: 0 auto;
+            border: 1px dotted red;
+        }
+        div.in{
+            font-weight: bold;
+            text-align: center;
+            display: inline-block;
+            width: 200px;
+            height: 60px;
+            margin: 5px;
+            background-color: lightgreen;
+        }
+
+        #rot{
+            transform: rotate(20deg);
+        }
+        #rot:hover{
+            /*반시계 방향 90돌리기*/
+            transform: rotate(-90deg);
+        }
+        
+        #skw{
+            transform: skew(0, -20deg); /*x축, y축으로 기울기*/
+        }
+        #skw:hover{
+            /*x축 20도 기울기*/
+            transform: skew(20deg,0);
+        }
+
+        #trs{
+            transform: translate(10px, 50px); /*x,y축으로 이동*/
+        }
+        #trs:hover{
+            /*x축 50 y축 10 px*/
+            transform: translate(50px, 10px);
+        }
+
+        #scl{
+            transform: scale(1, 1);/*width,height 배 만큼 조절*/
+        }
+        #scl:hover{
+            /*0.5 1.5 확장*/
+            transform: scale(0.5, 1.5);
+        }
+    </style>
+</head>
+<body>
+    <h2>도형변환</h2>
+    <div class="out">
+    <div class="in" id="rot">rotate(20deg) 회전</div>
+    <div class="in" id="skw">skew(0,-20deg) 기울기</div>
+    <div class="in" id="trs">translate(10px, 50px) 이동</div>
+    <div class="in" id="scl">scale(0.5, 1) 확대/축소</div>
+    </div>
+</body>
+</html>

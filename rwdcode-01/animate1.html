@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEXT COLOR ANIMATION</title>
+    <style>
+
+        @keyframes textColorAni{ /*애니메이션, 이름 정의*/
+            0%{color: blue;} /* % = 시작 비율 시작 from 끝 to로도 사용 가능*/
+            50%{color: cadetblue;}
+            100%{color: red;}
+        }
+
+        span{
+            border: 1px solid lightgreen;
+            animation-name: textColorAni;
+            animation-duration: 2s;
+            animation-iteration-count:infinite;
+        }
+    </style>
+</head>
+<body>
+    <h1>글자 애니메이션1</h1>
+    <p><span>애니메이션TETX</span> 5초동안 글자색이 변경됩니다</p>
+
+</body>
+</html>

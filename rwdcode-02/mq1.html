@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미디어쿼리 - 화면사이즈 색상변경</title>
+</head>
+<style>
+    body{background-color: lightgreen;}
+
+    /*phone screen*/
+    @media only screen and (max-width:600px){/*최대값 600px*/
+                                            /*최대 600px 까지만 
+                                            아래 효과를 주겠다.*/
+        body{
+            background-color: lightskyblue;
+        }
+    }
+</style>
+<body>
+    <p>브라우저 사이즈를 조절하시오</p>
+    <p>테스트 단락1</p>
+    <p>테스트 단락2</p>
+    <p>테스트 단락3</p>
+</body>
+</html>

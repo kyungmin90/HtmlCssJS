@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX ANIMATION</title>
+    <style>
+        /*body{
+            animation-name: bodyAni;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }*/
+        div{
+            
+            text-align: center;
+            width: 200px;
+            height: 200px;
+            background-color: limegreen;
+            animation-name: boxAni;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+
+        }
+        @keyframes boxAni{
+            0%{width:200px; height: 200px;
+            background-color: midnightblue;}
+            50%{width: 400px; height: 400px;
+            background-color: orange;}
+            100%{width: 200px; height: 200px;
+            background-color: midnightblue;}
+        }
+        /*@keyframes bodyAni{
+            0%{background-color: olive;}
+            50%{background-color: blue;}
+            100%{background-color:black;}
+        }*/
+        
+    </style>
+</head>
+<body>
+    <h1>div박스 5초 동안 커지는 애니메이션</h1>
+    <div>점점 커지는 상자</div>
+</body>
+</html>
