@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>간단한 웹사이트(제목+메뉴)</title>
+    <style>
+    body{
+         background-color: #616161;
+    }
+    /*헤드*/    
+    div.head{
+        width: 400px;
+        color: white;
+        margin: auto;
+        padding-left: 100px;
+    }
+    p.headP{
+        padding: 5px 100px ;
+        font-size: 14px;
+    }     
+    
+    /*메뉴*/
+    div.menu{
+        width: 800px;
+        background-color: black;
+        height: 50px; padding-top: 1px;
+        margin: auto;
+    }
+    li{
+        display: inline;
+    }
+    a:link{
+        color: white;
+        text-decoration: none;
+         padding: 5px;
+    }
+    a:visited{
+        color: white;
+        text-decoration: none;
+         padding: 5px;
+    }
+    a:hover{
+        color: gold;
+    }
+    
+    /*메인*/
+        
+    div.main{
+        width: 800px;
+         height:600px;
+                margin: auto;
+    }
+
+    div.notnew{
+        background-color: white;
+        height: 600px;
+        
+    }
+    /*슬라이드 버튼*/
+  
+    a.next, a.prev{
+        cursor: pointer;
+        position: relative;
+        bottom: 180px;
+        color: white;
+        font-weight: bold;
+        background-color: black;
+    }
+    a.next{
+       left: 770px;
+    }
+    a.prev{
+        left: 5px;
+    }
+
+    a.prev:hover, a.next:hover{
+        background-color: gray;
+    }
+    /*하단 공지사항게시판 & 갤러리*/
+    div.notice{
+        width: 380px;
+        height: 230px;
+        float: left;
+        margin-left: 10px;
+    }
+    div.galley{
+        width: 380px;
+        height: 230px;
+        float: left;
+        margin-left: 10px;
+    }
+
+    div.noticeALL{
+        
+        width: 360px;
+        height: 170px;
+    }
+    p.notgal{
+        font-weight: bold;
+        font-size: 18px;
+        color: rgb(77, 74, 74);
+        border-bottom: 2px solid lightgray;
+        
+        
+    }
+    tr.first{
+        background-color: rgb(77, 122, 124);
+        color: white;
+        font-size: 14px;
+    }
+    th{
+        
+        height: 25px;
+        font-size: 13px;
+    }
+    tr.twofour{
+        background-color: rgb(223, 222, 222);
+    }
+    #a{
+        width: 280px;
+    }
+    #b{
+        width: 80px;
+    }
+    #link{
+        color: steelblue;
+    }
+    #link:hover{
+        color: red;
+    }
+    
+    figure{
+        
+        width: 110px;
+        height: 110px;
+        float: left;
+        margin: 10px;
+        text-align: center;
+        font-size: 14px;
+    }
+    div.galImg{
+        
+        width: 400px;
+        height: 150px;
+        padding: 5px;
+
+    }
+    #gallink{
+        color:steelblue;
+    }
+    #gallink:hover{
+        color: red;
+    }
+   
+
+    footer{
+        width: 800px;
+        background-color: black;
+        height: 30px;
+        color: white;
+        margin: 0 auto;
+        padding-top: 10px;
+        text-align: center;
+        font-size: 12px;
+    }
+    footer li{
+        padding-right: 30px;
+    }
+    li.copy{
+        font-style: italic;
+    }
+    </style>
+
+</head>
+<body>
+    <div class="head">
+        <h1>웹페이지 개발 연구소</h1>
+        <p class="headP">school of web</p>
+    </div>
+
+
+    <div class="menu">
+        <ul>
+            <li><a href="exam_1_home(박경민).html">Home</a></li>
+            <li><a href="exam_2_people(박경민).html">People</a></li>
+            <li><a href="exam_3_class(박경민).html">Class</a></li>
+            <li><a href="exam_4_notice(박경민).html">Notice</a></li>
+            <li><a href="exam_5_picture(박경민).html">Picture</a></li>
+            <li><a href="exam_6_game(박경민).html">Game</a></li>
+        </ul>
+    </div>
+
+
+    <div class="main">
+        <div class="notnew">
+            <!--이미지 슬라이드-->
+            <div class="slideshow">
+                <div class="Slide"><img src="images/slide1_1000x400.png" alt="" width="800"></div>
+                <div class="Slide"><img src="images/slide2_1000x400.png" alt="" width="800"></div>
+                <div class="Slide"><img src="images/slide3_1000x400.png" alt="" width="800"></div>
+                    <a class="prev" onclick="plusslide(-1)">&#10094;</a>
+                    <a class="next" onclick="plusslide(1)">&#10095;</a>
+            </div>
+            <div class="notice">
+                <p class="notgal">공지사항</p>
+                <div class="noticeALL">
+                    <table>
+                        <tr class="first">
+                            <th id="a">공지사항</th>
+                            <th id="b">게시자</th>
+                            <th>날짜</th>
+                        </tr>
+                        <tr>
+                            <th id="a"><a id="link" href="#">8월 1주차 공지사항</a></th>
+                            <th id="b">관리자</th>
+                            <th>2020.08.01</th>
+                        </tr>
+                        <tr class="twofour">
+                            <th id="a"><a id="link" href="#">7월 3주차 공지사항</a></th>
+                            <th id="b">관리자</th>
+                            <th>2020.07.22</th>
+                        </tr> 
+                        <tr>
+                            <th id="a"><a id="link" href="#">7월 2주차 공지사항</a></th>
+                            <th id="b">관리자</th>
+                            <th>2020.07.10</th>
+                        </tr>
+                        <tr class="twofour">
+                            <th id="a"><a id="link" href="#">7월 1주차 공지사항</a></th>
+                            <th id="b">관리자</th>
+                            <th>2020.07.01</th>
+                        </tr>
+                         
+                    </table>
+                  
+                    
+                </div>
+            </div>
+            <div class="galley">
+                <p class="notgal">갤러리</p>
+                <div class="galImg">
+                    <figure><a id="gallink" href="#">
+                    <figcaption><img src="images/print-01.jpg" width="110">Helianthus</figcaption>
+                </a></figure>
+                    <figure><a id="gallink" href="#">
+                    <figcaption><img src="images/print-03.jpg" width="110">Nyctocalos</figcaption>
+                </a></figure>
+                    <figure><a id="gallink" href="#">
+                    <figcaption><img src="images/print-04.jpg" width="110">Polianthes</figcaption>
+                </a></figure>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <li><a href="#">회사소개</a></li>
+        <li><a href="#">제휴제안</a></li>
+        <li><a href="#">개인정보 이용방침</a></li>
+        <li><a href="#">고객센터</a></li>
+        <li class="copy">&copy; Park kyung-min Corp.</li> 
+    </footer>
+    <script>
+        function showslide(n){ 
+    slide = document.getElementsByClassName("Slide")
+   
+    for(i=0; i<slide.length; i++){
+        slide[i].style.display="none";
+    }
+  
+    if(n>slide.length) {
+        indexSlide = 1;
+    } if(n<1) {
+        indexSlide = slide.length;
+    }
+  
+    slide[indexSlide-1].style.display="block";
+    }
+    /////////////////////////////////////////////////
+
+    indexSlide = 1;
+    showslide(indexSlide);
+    
+    function plusslide(n){
+        temp = indexSlide+=n;
+        showslide(temp);
+    }
+    </script>
+</body>
+</html>

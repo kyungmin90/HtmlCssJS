@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>간단한 웹사이트(제목+메뉴)</title>
+    <style>
+    body{
+         background-color: #616161;
+    }
+    /*헤드*/    
+    div.head{
+        width: 400px;
+        color: white;
+        margin: auto;
+        padding-left: 100px;
+    }
+    p.headP{
+        padding: 5px 100px ;
+        font-size: 14px;
+    }     
+    
+    /*메뉴*/
+    div.menu{
+        width: 800px;
+        background-color: black;
+        height: 50px; padding-top: 1px;
+        margin: auto;
+    }
+    li{
+        display: inline;
+    }
+    a:link{
+        color: white;
+        text-decoration: none;
+         padding: 5px;
+    }
+    a:visited{
+        color: white;
+        text-decoration: none;
+         padding: 5px;
+    }
+    a:hover{
+        color: gold;
+    }
+    
+    /*메인*/
+        
+    div.main{
+        width: 800px;
+         height:600px;
+                margin: auto;
+    }
+
+    div.notnew{
+        background-color: white;
+        height: 600px;
+        padding: 19px;
+    }
+    h2{
+        color: gold;
+    }
+    P{
+        font-size: 14px;
+    }
+    p.day{
+        color: grey;
+        font-size: 13px;
+    }
+    div.not{
+        width: 400px;
+        float: left;
+    }
+   /*테이블*/
+         table{
+            width: 500px;
+            font-size: 13px;
+        }
+        div.tab{ 
+            width: 200px;
+            padding-top: 60px;
+            padding-right: 300px;
+        }
+        a.text1{
+            color:steelblue;
+        }
+        a.text1:hover{
+            color:tomato;
+        }
+        th.text1{
+            text-align: left;
+        }
+       tr.main th{
+          background-color: rgb(77, 122, 124);
+          color: white;
+       }
+       th{
+           border-top:1px solid lightgray;
+       }
+    
+    /*이미지*/
+    div.immg{
+            border-left: 2px solid lightgray;
+            width: 200px;
+            height: 500px;
+            float: left;
+            margin-left: 160px;
+    }
+    img{
+            padding-left: 20px;
+            width: 180px;
+            height: 220px;
+    }
+
+
+     footer{
+        width: 800px;
+        background-color: black;
+        height: 30px;
+        color: white;
+        margin: 0 auto;
+        padding-top: 10px;
+        text-align: center;
+        font-size: 12px;
+    }
+    footer li{
+        padding-right: 30px;
+    }
+    li.copy{
+        font-style: italic;
+    }
+    </style>
+
+
+</head>
+<body>
+    <div class="head">
+        <h1>웹페이지 개발 연구소</h1>
+        <p class="headP">school of web</p>
+    </div>
+
+
+    <div class="menu">
+        <ul>
+            <li><a href="exam_1_home(박경민).html">Home</a></li>
+            <li><a href="exam_2_people(박경민).html">People</a></li>
+            <li><a href="exam_3_class(박경민).html">Class</a></li>
+            <li><a href="exam_4_notice(박경민).html">Notice</a></li>
+            <li><a href="exam_5_picture(박경민).html">Picture</a></li>
+            <li><a href="exam_6_game(박경민).html">Game</a></li>
+        </ul>
+    </div>
+
+
+    <div class="main">
+        <div class="notnew">
+                <div class="not">
+                    <h2>Notice & News</h2>
+                    <p class="day">September 26 2020 by admin</p>
+                    <p>웹개발자 컴퍼런스를 개최하오니 많은 참여바랍니다.</p>
+                    <div class="tab">
+                        <h2>게시판</h2>
+                        <table>
+                        <tr class="main">
+                          <th>번호</th>
+                          <th>제목</th>
+                          <th>작성자</th>
+                          <th>날짜</th>
+                          <th>조회수</th>
+                          <th>댓글수</th>  
+                        </tr>
+                        <tr>
+                            <th>1</th>
+                            <th class="text1"><a class="text1" href="#">컴퍼런스 개최!</a></th>
+                            <th>kyungmin</th>
+                            <th>2020.08.04</th>
+                            <th>101</th>
+                            <th>22</th>  
+                          </tr>
+                          <tr>
+                            <th>2</th>
+                            <th class="text1"><a class="text1" href="#">안녕하세요</a></th>
+                            <th>kyung_za</th>
+                            <th>2020.08.04</th>
+                            <th>33</th>
+                            <th>25</th>  
+                          </tr>
+                          <tr>
+                            <th>3</th>
+                            <th class="text1"><a class="text1" href="#">참가 문의</a></th>
+                            <th>park3736</th>
+                            <th>2020.08.05</th>
+                            <th>20</th>
+                            <th>4</th>  
+                          </tr>
+                          <tr>
+                            <th>4</th>
+                            <th class="text1"><a class="text1" href="#">안녕하세요.</a></th>
+                            <th>pkm0305</th>
+                            <th>2020.08.05</th>
+                            <th>14</th>
+                            <th>6</th>  
+                          </tr>
+                          <tr>
+                            <th>5</th>
+                            <th class="text1"><a class="text1" href="#">참가요!!!!</a></th>
+                            <th>asdfg9090</th>
+                            <th>2020.08.06</th>
+                            <th>22</th>
+                            <th>13</th>  
+                          </tr>
+                          <tr>
+                            <th>6</th>
+                            <th class="text1"><a class="text1" href="#">안녕하세요!!!!</a></th>
+                            <th>roh97</th>
+                            <th>2020.08.07</th>
+                            <th>12</th>
+                            <th>4</th>  
+                          </tr>
+                          <tr>
+                            <th>7</th>
+                            <th class="text1"><a class="text1" href="#">컴퍼런스 참가</a></th>
+                            <th>leeseul</th>
+                            <th>2020.08.08</th>
+                            <th>30</th>
+                            <th>10</th>  
+                          </tr>
+                          <tr>
+                            <th>8</th>
+                            <th class="text1"><a class="text1" href="#">오오오오오~</a></th>
+                            <th>qwer11</th>
+                            <th>2020.08.11</th>
+                            <th>28</th>
+                            <th>11</th>  
+                          </tr>
+                          <tr>
+                            <th>9</th>
+                            <th class="text1"><a class="text1" href="#">반갑습니다.</a></th>
+                            <th>loolool</th>
+                            <th>2020.08.11</th>
+                            <th>4</th>
+                            <th>1</th>  
+                          </tr>
+                          <tr>
+                            <th>10</th>
+                            <th class="text1"><a class="text1" href="#">안녕하세요!.!</a></th>
+                            <th>hihi33</th>
+                            <th>2020.08.05</th>
+                            <th>16</th>
+                            <th>5</th>  
+                          </tr>
+                        </table>
+                        </div>
+                   </div>
+                <div class="immg">
+                    <img src="images/cf.jpg">
+                </div>
+                
+        </div>
+        
+        
+
+    </div>
+    <footer>
+        <li><a href="#">회사소개</a></li>
+        <li><a href="#">제휴제안</a></li>
+        <li><a href="#">개인정보 이용방침</a></li>
+        <li><a href="#">고객센터</a></li>
+        <li class="copy">&copy; Park kyung-min Corp.</li> 
+    </footer>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>간단한 웹사이트(제목+메뉴)</title>
+    <style>
+    body{
+         background-color: #616161;
+    }
+    /*헤드*/    
+    div.head{
+        width: 400px;
+        color: white;
+        margin: auto;
+        padding-left: 100px;
+    }
+    p.headP{
+        padding: 5px 100px ;
+        font-size: 14px;
+    }     
+    
+    /*메뉴*/
+    div.menu{
+        width: 800px;
+        background-color: black;
+        height: 50px; padding-top: 1px;
+        margin: auto;
+    }
+    li{
+        display: inline;
+    }
+    a:link{
+        color: white;
+        text-decoration: none;
+         padding: 5px;
+    }
+    a:visited{
+        color: white;
+        text-decoration: none;
+         padding: 5px;
+    }
+    a:hover{
+        color: gold;
+    }
+    
+    /*메인*/
+        
+    div.main{
+        width: 800px;
+         height:600px;
+                margin: auto;
+    }
+
+    div.notnew{
+        background-color: white;
+        height: 600px;
+        padding: 19px;
+    }
+    h2{
+        color: gold;
+    }
+    P{
+        font-size: 14px;
+    }
+    p.day{
+        color: grey;
+        font-size: 13px;
+    }
+    div.not{
+        width: 400px;
+        float: left;
+    }
+    
+    /*이미지*/
+    div.immg{
+            border-left: 2px solid lightgray;
+            width: 200px;
+            height: 500px;
+            float: left;
+            margin-left: 160px;
+        }
+        img{
+            padding-left: 20px;
+            width: 180px;
+            height: 220px;
+            }
+
+
+
+
+
+    footer{
+        width: 800px;
+        background-color: black;
+        height: 30px;
+        color: white;
+        margin: 0 auto;
+        padding-top: 10px;
+        text-align: center;
+        font-size: 12px;
+    }
+    footer li{
+        padding-right: 30px;
+    }
+    li.copy{
+        font-style: italic;
+    }
+    </style>
+
+
+</head>
+<body>
+    <div class="head">
+        <h1>웹페이지 개발 연구소</h1>
+        <p class="headP">school of web</p>
+    </div>
+
+
+    <div class="menu">
+        <ul>
+            <li><a href="exam_1_home(박경민).html">Home</a></li>
+            <li><a href="exam_2_people(박경민).html">People</a></li>
+            <li><a href="exam_3_class(박경민).html">Class</a></li>
+            <li><a href="exam_4_notice(박경민).html">Notice</a></li>
+            <li><a href="exam_5_picture(박경민).html">Picture</a></li>
+            <li><a href="exam_6_game(박경민).html">Game</a></li>
+        </ul>
+    </div>
+
+
+    <div class="main">
+        <div class="notnew">
+                <div class="not">
+                    <h2>Notice & News</h2>
+                    <p class="day">September 26 2020 by admin</p>
+                    <p>웹개발자 컴퍼런스를 개최하오니 많은 참여바랍니다.</p>
+                </div>
+                <div class="immg">
+                    <img src="images/cf.jpg">
+                </div>
+        </div>
+        
+        
+
+    </div>
+    <footer>
+        <li><a href="#">회사소개</a></li>
+        <li><a href="#">제휴제안</a></li>
+        <li><a href="#">개인정보 이용방침</a></li>
+        <li><a href="#">고객센터</a></li>
+        <li class="copy">&copy; Park kyung-min Corp.</li> 
+    </footer>
+</body>
+</html>
